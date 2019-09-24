@@ -1,0 +1,157 @@
+/* header hover */
+.header ul li a:hover {
+  /* color: black; */
+  /* text-shadow: 2px 2px 6px rgb(255, 255, 255); */
+  border-bottom-width: 3px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
+/* header hover ends */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 233, 233),
+    rgb(255, 170, 170),
+    rgb(188, 245, 213),
+    rgb(253, 178, 228),
+    rgb(128, 151, 214),
+    rgb(3, 17, 44),
+    rgb(5, 6, 8)
+  );
+  background-repeat: no-repeat;
+  min-height: 780px;
+  max-height: 1598;
+}
+.wrapper {
+  /* background-color: rgb(255, 255, 255); */
+  height: 90vh;
+
+  margin: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgb(187, 129, 129);
+  position: relative;
+  display: flex;
+
+  animation-name: colr;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+}
+@keyframes colr {
+  0% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgba(2, 66, 46, 1) 51%,
+      rgba(5, 107, 76, 1) 65%,
+      rgba(128, 236, 148, 0.693) 100%
+    );
+  }
+  17% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgb(68, 25, 94) 51%,
+      rgb(83, 54, 122) 65%,
+      rgba(152, 107, 224, 0.693) 100%
+    );
+  }
+  35% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgb(82, 19, 61) 51%,
+      rgb(153, 70, 91) 65%,
+      rgba(241, 89, 96, 0.693) 100%
+    );
+  }
+  54% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgba(2, 66, 46, 1) 51%,
+      rgb(124, 134, 62) 65%,
+      rgba(236, 248, 128, 0.693) 100%
+    );
+  }
+  71% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgb(99, 15, 85) 51%,
+      rgb(126, 52, 101) 65%,
+      rgba(250, 85, 162, 0.693) 100%
+    );
+  }
+  87% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgba(2, 66, 46, 1) 51%,
+      rgb(40, 99, 97) 65%,
+      rgba(114, 238, 247, 0.693) 100%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(20, 1, 1, 1) 10%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(6, 26, 20, 1) 32%,
+      rgb(82, 33, 10) 51%,
+      rgb(129, 83, 37) 65%,
+      rgba(253, 183, 104, 0.693) 100%
+    );
+  }
+}
+
+.content {
+  margin: 33px 0 0 0;
+  /* background-color: rgb(233, 102, 102); */
+  position: relative;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.img {
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  filter: blur(6px);
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 10px;
+  margin: 0 5px 0 0;
+}
+/* slide css */
+.slides {
+  position: relative;
+  width: 100%;
+  height: 95%;
+}
+
+.active {
+  z-index: 2;
+}

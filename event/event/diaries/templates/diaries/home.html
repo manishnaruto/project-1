@@ -1,0 +1,33 @@
+{% extends "diaries/base.html" %} {% load static %} {% block title%}
+Home {% endblock title %} {% block style %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet" />
+
+{% endblock style %} {% block content %}
+<div class="wrapper">
+  <div class="content">
+    <div class="slides">
+      <img
+        id="slide-1"
+        class=" img"
+        src="{% static 'img/797140.png' %}"
+      />
+
+      <img
+        id="slide-2"
+        class=" img "
+        src="{% static 'img/811143.jpg' %}"
+      />
+
+      <img
+        id="slide-3"
+        class=" img "
+        src="{% static 'img/994295.png' %}"
+      />
+    </div>
+  </div>
+</div>
+
+{% endblock content %} {% block script %}
+<script src="{% static 'js/custom_slider.js' %}"></script>
+
+{% endblock script %}
